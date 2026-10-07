@@ -1,0 +1,15 @@
+Pick ONE and paste it into appsettings.json -> ConnectionStrings -> DefaultConnection
+
+1) Visual Studio LocalDB (SQL Server Object Explorer > (localdb)\MSSQLLocalDB)
+   Server=(localdb)\\MSSQLLocalDB;Database=InventoryDB;Trusted_Connection=True;TrustServerCertificate=True;
+
+2) SQL Server Express
+   Server=.\\SQLEXPRESS;Database=InventoryDB;Trusted_Connection=True;TrustServerCertificate=True;
+
+3) Full SQL Server (Windows login)
+   Server=YOUR_PC_NAME;Database=InventoryDB;Trusted_Connection=True;TrustServerCertificate=True;
+
+4) SQL Server login (username / password)
+   Server=YOUR_PC_NAME;Database=InventoryDB;User Id=sa;Password=YourPassword;TrustServerCertificate=True;
+
+(In the .json file the backslash must be written twice: \\ )
